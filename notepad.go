@@ -161,6 +161,22 @@ func (n *Notepad) SetLogOutput(handle io.Writer) {
 	n.init()
 }
 
+// SetStdoutOutput set the stdout output for the notepad.
+func (n *Notepad) SetStdoutOutput(handle io.Writer) {
+  n.outHandle = handle
+  n.init()
+}
+
+// GetOutHandle gets the outHandle
+func (n *Notepad) GetOutHandle() io.Writer {
+  return n.outHandle
+}
+
+// GetLogHandle gets the logHandle
+func (n *Notepad) GetLogHandle() io.Writer {
+  return n.logHandle
+}
+
 // GetStdoutThreshold returns the defined Treshold for the log logger.
 func (n *Notepad) GetLogThreshold() Threshold {
 	return n.logThreshold
