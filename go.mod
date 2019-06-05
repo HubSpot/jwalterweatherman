@@ -1,4 +1,4 @@
-module github.com/spf13/jwalterweatherman
+module github.com/HubSpot/jwalterweatherman
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
